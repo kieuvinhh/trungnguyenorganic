@@ -7,7 +7,7 @@ function App() {
 
       <div className="Body">
         <center>
-        <img src={"../img/img_body.jpg"} alt="" width="1200" height="500" />
+        <img src={"../poster.png"} alt="" height="600" />
         </center>
       </div>
 
