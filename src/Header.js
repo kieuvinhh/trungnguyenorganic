@@ -1,5 +1,6 @@
-import react from "react";
 import "./Header.css";
+// eslint-disable-next-line 
+import react from "react";
 function Header(){
     return(
         <div className='header'>

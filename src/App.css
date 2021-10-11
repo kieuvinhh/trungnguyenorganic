@@ -1,7 +1,3 @@
-img {
-  object-fit: contain;
-}
-
 .news {
   display: flex;
   justify-content: center;
