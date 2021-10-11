@@ -7,6 +7,7 @@ function Comunity() {
       <div className="video2"> video 1</div>
       <div className="Video3"> video 1</div>
       <div className="Video3"> video 1</div>
+      <div className="Video3"> video 1</div>
     </div>
   );
 }
