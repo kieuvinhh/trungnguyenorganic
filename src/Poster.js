@@ -5,7 +5,7 @@ import "./Poster.css";
 function poster(){
     return(
         <div className="Body">
-            <img src={posters} alt="" height="600" />
+            <img src={posters} alt="" />
         </div>
     );
 }
