@@ -1,0 +1,13 @@
+.Footer {
+  padding: 10px 0px 15px;
+  background-color: rgb(91, 91, 91);
+  display: flex;
+  padding-bottom: 1em;
+}
+#Copyright {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+a {
+  text-decoration: none;
+}
