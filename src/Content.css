@@ -1,0 +1,8 @@
+.Content-center {
+  display: flex;
+  justify-content: center;
+}
+.news {
+  display: flex;
+  justify-content: center;
+}

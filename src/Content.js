@@ -3,7 +3,7 @@ import react from "react"
 function Content() {
     return (
         <div className="Content">
-            <center className="Content-center"><h1 id="content-center">Thông tin mới nhất</h1></center>
+            <div className="Content-center"><h1 id="content-center">Thông tin mới nhất</h1></div>
 
             <div className="news">
                 <div id="news1"> news1</div>
