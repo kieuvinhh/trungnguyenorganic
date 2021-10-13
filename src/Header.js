@@ -1,6 +1,4 @@
 import "./Header.css";
-// eslint-disable-next-line
-import react from "react";
 import { Link } from "react-router-dom";
 function Header() {
   return (
