@@ -14,12 +14,18 @@
 }
 
 .header__option {
-  font-size: 3vw;
+  font-size: 2vw;
   display: flex;
   flex-direction: column;
   margin-left: 10px;
   margin-right: 10px;
   color: white;
 }
-.lineone {
+.Lineone {
+  color: white;
+  text-decoration: none;
+}
+.Lineone:hover {
+  text-decoration: underline;
+  color: white;
 }
