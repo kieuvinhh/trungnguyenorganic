@@ -1,24 +1,12 @@
 .Video {
   display: grid;
-  align-items: center;
-  justify-content: center;
-  padding-left: 4vw;
+  width: 80%;
+  margin: auto;
+  grid-template-columns: 1fr;
+  grid-gap: 50px;
 }
-
-.video1 {
-  grid-column-start: 1;
-  grid-row-end: 1;
-}
-.video2 {
-  grid-column-start: 2;
-  grid-row-start: 1;
-}
-
-.video3 {
-  grid-column-start: 1;
-  grid-row-start: 2;
-}
-.video4 {
-  grid-column-start: 2;
-  grid-row-start: 2;
+@media screen and (min-width: 768px) {
+  .Video {
+    grid-template-columns: 1fr 1fr;
+  }
 }

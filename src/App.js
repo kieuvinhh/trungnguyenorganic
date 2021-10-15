@@ -6,13 +6,20 @@ import Comunity from "./Comunity";
 import Aboutus from "./Aboutus";
 import Bottom from "./Bottom";
 import Footer from "./Footer";
+import Login from "./Login.js"
 import {
   BrowserRouter as Router,
   Switch,
   Route,
 } from "react-router-dom";
+import { useEffect, useState } from "react";
 
 export default function App() {
+  const [token, setToken] = useState();
+
+  if(!token) {
+    return <Login setToken={setToken} />
+  }
   return (
     <Router>
       <div>
@@ -32,9 +39,13 @@ export default function App() {
           <Route path="/production">
             <Production />
           </Route>
+          <Route path="/login">
+            <Loginn />
+          </Route>
           <Route path="/">
             <Home />
           </Route>
+
         </Switch>
       </div>
     </Router>
@@ -42,6 +53,10 @@ export default function App() {
 }
 
 function Home() {
+  useEffect(() => {
+    console.log("123");
+  })
+
   return(
     <div>
       <Header/>
@@ -102,5 +117,11 @@ function Contact() {
       <Bottom/>
       <Footer/>
     </div>
+  );
+}
+
+function Loginn() {
+  return(
+    <Login/>
   );
 }
