@@ -1,12 +1,11 @@
 import "./App.css";
-import Header from "./Header.js";
-import Poster from "./Poster.js";
-import Content from "./Content";
-import Comunity from "./Comunity";
-import Aboutus from "./Aboutus";
-import Bottom from "./Bottom";
-import Footer from "./Footer";
-import Login from "./Login.js"
+import Header from "./components/header/Header.js";
+import Poster from "./components/poster/Poster.js";
+import Content from "./components/content/Content";
+import Comunity from "./components/comunity/Comunity";
+import Aboutus from "./components/about/Aboutus";
+import Bottom from "./components/bottom/Bottom";
+import Footer from "./components/footer/Footer";
 import {
   BrowserRouter as Router,
   Switch,
@@ -15,11 +14,7 @@ import {
 import { useEffect, useState } from "react";
 
 export default function App() {
-  const [token, setToken] = useState();
-
-  if(!token) {
-    return <Login setToken={setToken} />
-  }
+  
   return (
     <Router>
       <div>
@@ -28,19 +23,16 @@ export default function App() {
             renders the first one that matches the current URL. */}
         <Switch>
         <Route path="/news">
-            <News />
+            <Home />
           </Route>
           <Route path="/contact">
-            <Contact />
+            <Home />
           </Route>
           <Route path="/introduction">
-            <Introduction/>
+            <Home/>
           </Route>
           <Route path="/production">
-            <Production />
-          </Route>
-          <Route path="/login">
-            <Loginn />
+            <Home />
           </Route>
           <Route path="/">
             <Home />
@@ -53,9 +45,7 @@ export default function App() {
 }
 
 function Home() {
-  useEffect(() => {
-    console.log("123");
-  })
+  
 
   return(
     <div>
@@ -117,11 +107,5 @@ function Contact() {
       <Bottom/>
       <Footer/>
     </div>
-  );
-}
-
-function Loginn() {
-  return(
-    <Login/>
   );
 }
