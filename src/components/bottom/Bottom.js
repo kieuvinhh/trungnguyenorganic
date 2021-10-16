@@ -1,4 +1,3 @@
-import react from "react";
 import "./Bottom.css"
 function Bottom () {
     return (

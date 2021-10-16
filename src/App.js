@@ -3,7 +3,6 @@ import Header from "./components/header/Header.js";
 import Poster from "./components/poster/Poster.js";
 import Content from "./components/content/Content";
 import Comunity from "./components/comunity/Comunity";
-import Aboutus from "./components/about/Aboutus";
 import Bottom from "./components/bottom/Bottom";
 import Footer from "./components/footer/Footer";
 import {
@@ -11,7 +10,6 @@ import {
   Switch,
   Route,
 } from "react-router-dom";
-import { useEffect, useState } from "react";
 
 export default function App() {
   
@@ -55,53 +53,6 @@ function Home() {
       <Content />
 
       <Comunity />
-
-      <Bottom/>
-      <Footer/>
-    </div>
-  );
-}
-
-function Introduction() {
-  return(
-    <div>
-      <Header/>
-      <h1>Introduction</h1>
-      <Bottom/>
-      <Footer/>
-    </div>
-  );
-}
-
-function Production() {
-  return(
-    <div>
-      <Header/>
-      <h1>Production</h1>
-
-      <Bottom/>
-      <Footer/>
-    </div>
-  );
-}
-
-function News() {
-  return(
-    <div>
-      <Header/>
-      <h1>News</h1>
-
-      <Bottom/>
-      <Footer/>
-    </div>
-  );
-}
-
-function Contact() {
-  return(
-    <div>
-      <Header/>
-      <h1>Contact</h1>
 
       <Bottom/>
       <Footer/>

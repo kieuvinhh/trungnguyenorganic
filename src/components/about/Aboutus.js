@@ -1,4 +1,3 @@
-import react from "react";
 import "./Aboutus.css"
 function Aboutus() {
     return(

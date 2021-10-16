@@ -8,23 +8,10 @@
   z-index: 100;
   justify-content: space-evenly;
 }
-
-.navigation {
-  display: flex;
-}
-
-.header__option {
-  font-size: 2vw;
-  display: inline;
-  margin-left: 10px;
-  margin-right: 10px;
+.nav-link {
   color: white;
 }
-.Lineone {
-  color: white;
-  text-decoration: none;
-}
-.Lineone:hover {
+.nav-link:hover {
   text-decoration: underline;
   color: white;
 }

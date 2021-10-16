@@ -1,27 +1,24 @@
 import "./Header.css";
-import { Link } from "react-router-dom";
 function Header() {
   return (
     <div className="header">
-      <nav className="navigation">
-        <ul>
-          <li className="header__option">
-            <Link className="Lineone" to='/'>Trang chủ</Link>
-          </li>
-          <li className="header__option">
-            <Link className="Lineone" to="/introduction">Giới thiệu</Link>
-          </li>
-          <li className="header__option">
-            <Link className="Lineone" to='/production'>Sản phẩm</Link>
-          </li>
-          <li className="header__option">
-            <Link className="Lineone" to='/news'>Tin tức sức khỏe</Link>
-          </li>
-          <li className="header__option">
-            <Link className="Lineone" to='/contact'>Liên hệ</Link>
-          </li>
-        </ul>
-      </nav>
+      <ul class="nav">
+        <li class="nav-item">
+          <a class="nav-link" href="home">Trang chủ</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="introduction">Giới thiệu</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="production">Sản phẩm</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="news">Tin tức</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact">Liên hệ</a>
+        </li>
+      </ul>
     </div>
   );
 }

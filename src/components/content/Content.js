@@ -1,5 +1,4 @@
 import "./Content.css"
-import react from "react"
 function Content() {
     return (
         <div className="Content">

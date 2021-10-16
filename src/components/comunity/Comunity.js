@@ -1,5 +1,5 @@
 import "./Comunity.css";
-import { react, useState } from "react";
+import { useState } from "react";
 import axios from "axios";
 
 function Comunity() {
