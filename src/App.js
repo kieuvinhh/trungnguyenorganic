@@ -12,7 +12,6 @@ import {
 } from "react-router-dom";
 
 export default function App() {
-  
   return (
     <Router>
       <div>
@@ -43,8 +42,6 @@ export default function App() {
 }
 
 function Home() {
-  
-
   return(
     <div>
       <Header/>
