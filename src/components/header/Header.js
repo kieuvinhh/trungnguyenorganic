@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 function Header() {
   return (
     <div className="header">
-      <div className="navigation">
+      <nav className="navigation">
         <div className="header__option">
           <Link className="Lineone" to='/'>Trang chủ</Link>
         </div>
@@ -19,7 +19,7 @@ function Header() {
         <div className="header__option">
           <Link className="Lineone" to='/contact'>Liên hệ</Link>
         </div>
-      </div>
+      </nav>
     </div>
   );
 }

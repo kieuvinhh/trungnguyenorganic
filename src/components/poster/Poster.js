@@ -1,12 +1,12 @@
 // eslint-disable-next-line 
 import react from "react";
-import posters from "./poster.png";
+import poster from "./IMG_1245.png";
 import "./Poster.css";
-function poster(){
+function Poster(){
     return(
         <div className="Body">
-            <img src={posters} alt="" />
+            <img src={poster} alt="" height="85%"/>
         </div>
     );
 }
-export default poster;
+export default Poster;

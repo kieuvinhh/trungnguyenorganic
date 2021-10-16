@@ -3,14 +3,18 @@ import "./Bottom.css"
 function Bottom () {
     return (
     <div className="Bottom">
-        <div className="information"> Thông tin về chúng tôi </div>
+        <div className="information"> 
+            <h4>Thông tin về chúng tôi</h4>
+        </div>
 
         <div className="policy">
-            <div>Chính sách bán hàng</div>
-            <div>Chính sách vận chuyển</div>
-            <div>Chính sách đổi trả hàng</div>
-            <div>Chính sách bảo hành</div>
-            <div>Chính sách thanh toán</div>
+            <h4>Chính sách bán hàng</h4>
+            <ul className="ul-footer">
+                <li>Chính sách vận chuyển</li>
+                <li>Chính sách đổi trả hàng</li>
+                <li>Chính sách bảo hành</li>
+                <li>Chính sách thanh toán</li>
+            </ul>
         </div>
 
         <div className="address"> 
