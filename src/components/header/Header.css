@@ -15,8 +15,7 @@
 
 .header__option {
   font-size: 2vw;
-  display: flex;
-  flex-direction: column;
+  display: inline;
   margin-left: 10px;
   margin-right: 10px;
   color: white;

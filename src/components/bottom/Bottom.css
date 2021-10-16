@@ -1,23 +1,19 @@
 .Bottom {
+  display: grid;
+  justify-content: space-evenly;
   background-color: rgb(43, 43, 43);
-  display: flex;
-  justify-content: center;
-}
-.ul-footer {
-  list-style: none;
-  text-align: left;
 }
 .information {
-  margin-right: 15vw;
   color: white;
-  padding: 30px 0px 0px;
+  grid-column: 1;
+  grid-row: 1;
 }
 .policy {
-  margin-right: 15vw;
   color: white;
-  padding: 30px 0px 0px;
+  grid-column: 2;
+  grid-row: 1;
 }
-.address {
-  color: white;
-  padding: 30px 0px 0px;
+
+li {
+  list-style: none;
 }

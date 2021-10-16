@@ -56,7 +56,6 @@ function Home() {
 
       <Comunity />
 
-      <Aboutus/>
       <Bottom/>
       <Footer/>
     </div>
