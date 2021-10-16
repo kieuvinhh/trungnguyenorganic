@@ -1,5 +1,9 @@
 .Body {
-  display: flex;
+  display: absolute;
+}
+img {
   justify-content: center;
-  height: 50vw;
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
