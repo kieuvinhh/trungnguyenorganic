@@ -1,3 +1,6 @@
+.Content {
+  align-items: center;
+}
 .Content-center {
   display: flex;
   justify-content: center;
@@ -5,4 +8,13 @@
 .news {
   display: flex;
   justify-content: center;
+}
+#company {
+  width: 100%;
+}
+#company tr.even {
+  background-color: #e5f1fd;
+}
+#content2 {
+  padding-left: 10px;
 }

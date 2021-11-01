@@ -1,16 +1,5 @@
 import "./Comunity.css";
-import { useState } from "react";
-import axios from "axios";
-
 function Comunity() {
-  let Url = "http://2764-35-225-204-31.ngrok.io/link";
-  const [links, setLink] = useState('');
-  axios.get(Url)
-  .then(response => {
-    setLink(response.data);
-  })
-    console.log(links);
-    
   return (
     <div className="Comunity">
     

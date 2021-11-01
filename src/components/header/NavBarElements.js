@@ -13,6 +13,7 @@ export const Nav = styled.nav`
     /*3rd*/
     justify-content: flex-start;
 `
+
 export const NavLink = styled(Link)`
     color: #fff;
     display: flex;
@@ -38,7 +39,12 @@ export const Bars = styled(FaBars)`
         font-size: 1.8rem;
         cursor: pointer;
     }
+&:active{
+    color:red;
+    
+}
 `
+
 export const NavMenu = styled.div`
     display:flex;
     align-items: center;

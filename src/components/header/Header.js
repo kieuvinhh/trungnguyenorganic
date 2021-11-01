@@ -1,13 +1,14 @@
 import "./Header.css";
+import logo from "./logo.png";
 import {Nav, NavLink, Bars, NavMenu, NavBtnLink, NavBtn} from "./NavBarElements.js"
 function Header() {
   return (
     <>
       <Nav>
         <NavLink to="/">
-          <h1>LOGO</h1>
+          <img className="logo" src={logo} alt="logo"></img>
         </NavLink>
-        <Bars />
+        <Bars activeStyle/>
         <NavMenu>
           <NavLink to="/introduction" activeStyle>
             Giới Thiệu
