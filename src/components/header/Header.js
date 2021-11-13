@@ -4,12 +4,15 @@ import {Nav, NavLink, Bars, NavMenu, NavBtnLink, NavBtn} from "./NavBarElements.
 function Header() {
   return (
     <>
+    
       <Nav>
-        <NavLink to="/">
-          <img className="logo" src={logo} alt="logo"></img>
-        </NavLink>
+      
         <Bars activeStyle/>
+            <NavLink to="/">
+              <img className="logo" src={logo} alt="logo"></img>
+            </NavLink>
         <NavMenu>
+         
           <NavLink to="/introduction" activeStyle>
             Giới Thiệu
           </NavLink>
