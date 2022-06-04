@@ -1,115 +1,273 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Start your development with Creative Design landing page.">
+    <meta name="author" content="Devcrud">
     <title>Trung Nguyen Organic</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="/index.css">
+
+    <!-- font icons -->
+    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+
+    <!-- Bootstrap + Creative Design main styles -->
+	<link rel="stylesheet" href="assets/css/creative-design.css">
+    <style>
+        #company{
+            width: 100%;
+        }
+        #company tr.even {
+            background-color: #E5F1FD;
+        }
+        h2, .title, p, .font-own, h6, h1{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
 </head>
-<style>
-    #company{
-        width: 100%;
-    }
-    #company tr.even {
-        background-color: #E5F1FD;
-    }
-</style>
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
     
-    <div class="nav-bar-own">
-        <nav>
-        <ul class="navbar navbar-expand-sm list-unstyled">
-            <li class="nav-item">
-                <a class="nav-link" href="#">
-                    <img src="assets/images/icon.png" class="navbar-brand" alt="logo">
-                    Trung Nguyen Organic
-                </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="templates/introduction.html">Introduction</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="templates/product.html">Production</a> 
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="templates/contact.html">Contact</a>
-            </li>
-        </ul>
-        </nav>
-    </div>
-   
-    
-    <div id="content">
-        <div id="content2">
-            <div itemscope="">
-                <table>
-                    <tbody>
-                    <tr>
-                        <td style="vertical-align:middle; font: message-box;"><h1>TRUNG NGUYEN ORGANIC</h1></td>
-                        <td style="vertical-align:middle;"></td>
-                    </tr>
-                    <tr>
+    <!-- Page Navbar -->
+    <nav id="scrollspy" class="navbar page-navbar navbar-light navbar-expand-md fixed-top" data-spy="affix" data-offset-top="20">
+        <div class="container">
+            <a class="navbar-brand" href="#"><strong class="text-primary">Trung Nguyen </strong> <span class="text-dark">Organic</span></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-                    </tr>
-                    </tbody>
-                </table>
-                <p>
-
-			    </p>
-                <table id="company">
-				    <tbody>
-                    <tr class="even">
-					    <th>Company Name</th>
-					    <td itemprop="name">TRUNG NGUYEN ORGANIC</td>
-				    </tr>
-                    <tr class="odd">
-                        <th>Address</th>
-                        <td itemprop="streetAddress">85 Le Thi Hong Gam Street, Vinh Thanh Ward, Rach Gia City&nbsp</td>
-                    </tr>
-        
-                    <tr class="even">
-                        <th>City</th>
-                        <td itemprop="addressLocality">Kien Giang Province&nbsp;
-                                            </td>
-                    </tr>
-                    
-                    <tr class="odd">
-                        <th>Country</th>
-                        <td itemprop="addressCountry">VIETNAM&nbsp;</td>
-                    </tr>
-                    <tr class="even">
-					    <th>Phone</th>
-					    <td itemprop="telephone">+84  9 39971682&nbsp;</td>
-				    </tr>
-                    <tr class="odd">
-                        <th>E-mail</th>
-                        <td itemprop="email"><a href="mailto:trungnguyenorganic@gmail.com">trungnguyenorganic@gmail.com</a>&nbsp;</td>
-                    </tr>
-                    <tr class="even">
-                        <th>www</th>
-                        <td><a href="index.html" >www.trungnguyenorganic.com.vn</a>&nbsp;</td>
-                    </tr>
-                    
-                    <tr class="odd">
-                        <th>Products to sell</th>
-                        <td>Đông trùng hạ thảo</td>
-                    </tr>
-                    <tr class="even">
-                        <th>Products to buy</th>
-                        <td>Đông trùng hạ thảo</td>
-                    </tr>
-                    <tr class="odd">
-                        <th></th>
-                        <td style="text-align:justify;">&nbsp;&nbsp;</td>
-                    </tr>
-
-			        </tbody>
-                </table>
-		<p>
-        </p>
-		</div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Trang chủ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Về chúng tôi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#features">Sản phẩm</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Liên hệ</a>
+                    </li>
+                </ul>
+            </div>
         </div>
+    </nav><!-- End of Page Navbar -->   
+
+    <!-- Page Header -->
+    <header id="home" class="header">
+        <div class="overlay"></div>
+        <div class="header-content">
+            <h6>Trung Nguyen Organic</h6> 
+            <p>Cung cấp đông trùng hạ thảo chất lượng cao</p>
+        </div>      
+    </header><!-- End of Page Header -->    
+    
+    <!-- About Section -->
+    <section id="about">
+        <!-- Container -->
+        <div class="container">
+            <!-- About wrapper -->
+            <div class="about-wrapper">
+                <div class="after"><h1>Thông tin</h1></div>
+                <div class="content">
+                        <div itemscope="">
+                            <table>
+                                <tbody>
+                                <tr>
+                                    <td style="vertical-align:middle; font: message-box;"><h1>TRUNG NGUYEN ORGANIC</h1></td>
+                                    <td style="vertical-align:middle;"></td>
+                                </tr>
+                                <tr>
+            
+                                </tr>
+                                </tbody>
+                            </table>
+                            <p>
+            
+                            </p>
+                            <table id="company">
+                                <tbody>
+                                <tr class="even">
+                                    <th>Company Name</th>
+                                    <td itemprop="name">TRUNG NGUYEN ORGANIC</td>
+                                </tr>
+                                <tr class="odd">
+                                    <th>Address</th>
+                                    <td itemprop="streetAddress">85 Le Thi Hong Gam Street, Vinh Thanh Ward, Rach Gia City&nbsp</td>
+                                </tr>
+                    
+                                <tr class="even">
+                                    <th>City</th>
+                                    <td itemprop="addressLocality">Kien Giang Province&nbsp;
+                                                        </td>
+                                </tr>
+                                
+                                <tr class="odd">
+                                    <th>Country</th>
+                                    <td itemprop="addressCountry">VIETNAM&nbsp;</td>
+                                </tr>
+                                <tr class="even">
+                                    <th>Phone</th>
+                                    <td itemprop="telephone">+84  9 39971682&nbsp;</td>
+                                </tr>
+                                <tr class="odd">
+                                    <th>E-mail</th>
+                                    <td itemprop="email"><a style="color:black" href="mailto:trungnguyenorganic@gmail.com">trungnguyenorganic@gmail.com</a>&nbsp;</td>
+                                </tr>
+                                <tr class="even">
+                                    <th>www</th>
+                                    <td><a href="index.html" style="color:black" >www.trungnguyenorganic.com.vn</a>&nbsp;</td>
+                                </tr>
+                                
+                                <tr class="odd">
+                                    <th>Products to sell</th>
+                                    <td>Đông trùng hạ thảo</td>
+                                </tr>
+                                <tr class="even">
+                                    <th>Products to buy</th>
+                                    <td>Đông trùng hạ thảo</td>
+                                </tr>
+                                <tr class="odd">
+                                    <th></th>
+                                    <td style="text-align:justify;">&nbsp;&nbsp;</td>
+                                </tr>
+            
+                                </tbody>
+                            </table>
+                    </div>
+            </div><!-- End of About Wrapper -->         
+        </div>  <!-- End of Container-->        
+     </section><!--End of Section -->
+
+    
+    <!-- Features Section -->
+    <section class="has-bg-img" id="features">
+        
+
+        <!-- Button trigger modal -->
+        <div class="container">
+            <h2>Chúng tôi chuyên cung cấp các sản phẩm như:</h2>
+                <!-- Row -->
+                <div class="row justify-content-between align-items-center">
+                    <div class="col-md-6">
+                        <div class="img-wrapper">
+                            <div class="after"></div>
+                            <img src="assets/imgs/img-3.jpg" class="w-100" alt="About us">
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <h6 class="title mb-3">Đông trùng hạ thảo xấy thăng hoa.</h6>
+                        
+                        <p>Sản phẩm tươi sau khi được nuôi trồng trong môi trường đạt chuẩn sẽ được mang vào các thiết bị sấy thăng hoa. 
+                            Xấy thăng hoa có thể giúp cho sản phẩm giữ được hàm lương dinh dưỡng cao trong thời gian dài, đồng thời cũng có thể chế biến thành các thực phẩm khác nhau để nâng cao sức khỏe người tiêu dùng.
+                        </p>
+                        <p class="text-muted">Sản phẩm hiện đang có sẵn, liên hệ chúng tôi để biết thêm chi tiết sản phẩm</p>
+                    </div>
+                </div><!-- End of Row -->           
+            </div><!-- End of Container-->    
+           
+    </section><!-- End of features Section -->  
+
+    <!-- Section -->
+    <section>
+        <!-- Container -->
+        <div class="container">
+            <!-- Row -->
+            <div class="row justify-content-between align-items-center">
+                <div class="col-md-6">
+                    <div class="img-wrapper">
+                        <div class="after"></div>
+                        <img src="assets/imgs/img-3.jpg" class="w-100" alt="About us">
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <h6 class="title mb-3">Đông trùng hạ thảo tươi.</h6>
+                    
+                    <p>Đông trùng hạ thảo được nuôi cấy trong môi trường đạt chuẩn và giữ được hàm lượng dinh dưỡng. Đông trùng hạ thảo sau khi thu hoạch được bảo quản trong môi trường đạt chuẩn nhằm giữ nguyên hàm lượng dinh dưỡng. Thích hợp với việc kết hợp cùng các thực phẩm tươi để bổ sung sức khỏe cho người sử dụng</p>
+                    <p class="text-muted">Sản phẩm hiện đang có sẵn, liên hệ chúng tôi để biết thêm chi tiết sản phẩm</p>
+                </div>
+            </div><!-- End of Row -->           
+        </div><!-- End of Container-->      
+    </section><!-- End of Section -->   
+
+    <!-- Testmonial Section -->
+    <section class="text-center pt-5" id="testmonial">
+        <!-- Container -->
+        <div class="container">
+            <h3 class="font-own mt-3 mb-5 pb-5">Sứ mệnh và tầm nhìn</h3>
+            <!-- Row -->
+            <div class="row">
+                <h6>Với mục tiêu cung cấp sản phẩm tốt nhất cho người sử dụng chúng tôi đã không ngừng hoàn thiện </h6>
+            </div><!-- end of Row -->           
+        </div><!-- End of Cotanier -->  
+    </section><!-- End of Testmonial Section -->
+
+   
+
+    <!-- Contact Section -->
+    <section id="contact" class="text-center">
+        <!-- container -->
+        <div class="container">
+            <h1>Liên hệ với chúng tôi</h1>
+            <p class="mb-5">Nếu quý khách có bất kì vấn đề gì, đừng ngần ngại, hãy liên hệ với chúng tôi.
+            </p>
+            <h1>+84 939971682 </h1>
+        </div><!-- End of Container-->      
+    </section><!-- End of Contact Section -->   
+
+    <!-- Section -->
+    <section class="pb-0">
+        <!-- Container -->
+        <div class="container">
+            <!-- Pre footer -->
+            <div class="pre-footer">
+                <ul class="list">
+                    <li class="list-head">
+                        <h6 class="font-weight-bold">Về chúng tôi</h6>
+                    </li>
+                    <li class="list-body">
+                        <p>Chúng tôi luôn muốn mang đến những giá trị tốt nhất cho khách hàng của mình, Vì thế chúng tôi đã không ngừng cố gắng và hoàn thiện sản phẩm.</p>
+                        <a href="#"><strong class="text-primary">Trung Nguyen</strong> <span class="text-dark">Organic</span></a>
+                    </li>
+                </ul>
+                
+                <ul class="list">
+                    <li class="list-head">
+                        <h6 class="font-weight-bold">Liên hệ với chúng tôi</h6>
+                    </li>
+                    <li class="list-body">
+                        <p>Cảm ơn quý khách đã tin tưởng và chọn Trung Nguyên Organic.</p>
+                        <p><i class="ti-location-pin"></i> 	85 Lê Thị Hồng Gấm, Vĩnh Thanh, Rạch Giá, Kiên Giang </p>
+                        <p><i class="ti-email"></i>  trungnguyenorganic@gmail.com</p>
+                        <!-- <div class="social-links">
+                            <a href="javascript:void(0)" class="link"><i class="ti-facebook"></i></a>
+                            <a href="javascript:void(0)" class="link"><i class="ti-twitter-alt"></i></a>
+                            <a href="javascript:void(0)" class="link"><i class="ti-google"></i></a>
+                            <a href="javascript:void(0)" class="link"><i class="ti-pinterest-alt"></i></a>
+                            <a href="javascript:void(0)" class="link"><i class="ti-instagram"></i></a>
+                            <a href="javascript:void(0)" class="link"><i class="ti-rss"></i></a>
+                        </div> -->
+                    </li>
+                </ul> 
+            </div><!-- End of Pre footer -->            
+
+            <!-- foooter -->
+            <footer class="footer">            
+                <p>Copyright <script>document.write(new Date().getFullYear())</script> &copy; <a href="http://www.trungnguyenorganic.com.vn">Trung Nguyen Organic</a></p>
+            </footer><!-- End of Footer-->  
+            
+        </div><!--End of Container -->      
+    </section><!-- End of Section -->
+
+    <!-- core  -->
+    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+
+    <!-- bootstrap affix -->
+    <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+
+    <!-- Creative Design js -->
+    <script src="assets/js/creative-design.js"></script>
+
 </body>
 </html>
